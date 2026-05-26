@@ -242,7 +242,7 @@ Internet Gateway (MyIGW)
    - **Elastic IP:** Click **Allocate Elastic IP**
 3. Click **Create NAT gateway**
 
-> he NAT Gateway will show **Pending** status, wait 1–2 minutes for it to become **Available** before proceeding.
+> The NAT Gateway will show **Pending** status, wait 1–2 minutes for it to become **Available** before proceeding.
 
 ![NAT Gateway Configuration](Images/NAT-Gateway.PNG)
 
@@ -300,7 +300,7 @@ Direct private subnet traffic through the NAT Gateway by updating the **main** r
    - **Auto-assign public IP:** Disable
    - **Security group:** Allow SSH from `MyPublicSubnet` CIDR (`10.0.0.0/24`) only
 
-![Private Instance Network Settings](Images/Network_traffic.PNG)
+![Private Instance Network Settings](Images/Network-traffic.PNG)
 
 ---
 
@@ -322,7 +322,7 @@ yum -y update
 
 > A successful update confirms the public instance has internet access via the Internet Gateway.
 
-![Root Updates Running](Images/Root-Updates.PNG)
+![Root Updates Running](Images/Route-Updates.PNG)
 
 #### SSH to Private Instance (via the Public Instance as a jump box)
 
@@ -410,4 +410,4 @@ Delete in this order to avoid dependency errors:
 
 ---
 
-> ** Cost Estimate:** NAT Gateway ~$0.045/hr + $0.045/GB data processed. Elastic IP: free while attached, ~$0.005/hr when unattached. Always clean up all AWS resources when finished to avoid charges. 
+ ** Cost Estimate:** NAT Gateway ~$0.045/hr + $0.045/GB data processed. Elastic IP: free while attached, ~$0.005/hr when unattached. Always clean up all AWS resources when finished to avoid charges. 
