@@ -381,7 +381,7 @@ Delete in this order to avoid dependency errors:
 4. **Detach and delete the Internet Gateway** (VPC → Internet Gateways → Detach, then Delete)
 5. **Delete custom Route Tables** (VPC → Route Tables → Delete `PublicRouteTable`)
 6. **Delete Subnets** (VPC → Subnets → Delete both subnets)
-7. **Delete the VPC** (VPC → Your VPCs → Delete)
+7. **Delete the VPC** (VPC → Your VPCs →  Delete)
 
 ---
 
@@ -410,4 +410,4 @@ Delete in this order to avoid dependency errors:
 
 ---
 
-> ** Cost Estimate:** NAT Gateway ~$0.045/hr + $0.045/GB data processed. Elastic IP: free while attached, ~$0.005/hr when unattached. Always clean up lab resources when finished.
+> ** Cost Estimate:** NAT Gateway ~$0.045/hr + $0.045/GB data processed. Elastic IP: free while attached, ~$0.005/hr when unattached. Always clean up all AWS resources when finished to avoid charges. 
