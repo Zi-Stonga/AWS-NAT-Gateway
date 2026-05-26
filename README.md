@@ -264,7 +264,7 @@ Direct private subnet traffic through the NAT Gateway by updating the **main** r
 
 > The private route table now has 2 routes: local VPC traffic and outbound traffic directed to the NAT Gateway.
 
-![Private Route Table Updated](Images/Root-Updates.PNG)
+![Private Route Table Updated](Images/Route-Updates.PNG)
 
 ![NAT Gateway Active in Route Table](Images/NAT-Gateway3.PNG)
 
